@@ -1,0 +1,12 @@
+# backups / scratch
+index.before-*.html
+index.original.html
+_*.ps1
+_*.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
