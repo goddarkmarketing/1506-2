@@ -126,7 +126,29 @@
   accent-color: #11b6a3;
   flex-shrink: 0;
 }
-.dg-tours-chip span {
+.dg-tours-chip__text {
+  flex: 1;
+  min-width: 0;
+  color: #1f354c;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.dg-tours-chip__count {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: #64748b;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+}
+.dg-tours-chip:has(input:checked) .dg-tours-chip__count {
+  color: #0f766e;
+}
+/* Legacy chips that still use a bare <span> */
+.dg-tours-chip > span:not(.dg-tours-chip__count):not(.dg-tours-chip__text) {
+  flex: 1;
   color: #1f354c;
   font-size: 0.875rem;
   font-weight: 600;

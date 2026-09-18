@@ -157,10 +157,14 @@
 
   /* ---------- Destinations dropdown (desktop) ---------- */
   const destBtn = qsa('nav[aria-label="Main"] button[aria-haspopup="true"]').find(
-    (b) => b.textContent.includes("Destinations")
+    (b) => /Destinations|ปลายทาง/i.test(b.textContent || "")
   );
 
   const destinations = [
+    { label: "Chiang Mai", href: "destinations/chiang-mai/" },
+    { label: "Chiang Rai", href: "destinations/chiang-rai/" },
+    { label: "Krabi", href: "destinations/krabi/" },
+    { label: "Koh Samui", href: "destinations/koh-samui/" },
     { label: "Phi Phi Bamboo Island", href: "tours/phi-phi-maya-bay-bamboo-island-tour-speedboat/" },
     { label: "Phi Phi & Khai Islands", href: "tours/phi-phi-maya-bay-khai-islands-speedboat/" },
     { label: "James Bond Island", href: "tours/james-bond-island-tour-speedboat/" },
@@ -169,6 +173,7 @@
     { label: "Raya & Coral Island", href: "tours/raya-coral-island-tour-phuket-full-day/" },
     { label: "ATV Tour", href: "tours/phuket-atv-tour/" },
     { label: "City Tour", href: "tours/phuket-city-tour-half-day/" },
+    { label: "All destinations", href: "destinations/" },
   ];
 
   function destLinksHtml(linkClass) {
@@ -209,7 +214,7 @@
 
   /* Mobile destinations accordion */
   const mobileDestBtn = qsa('nav[aria-label="Mobile"] button[aria-expanded]').find(
-    (b) => b.textContent.includes("Destinations")
+    (b) => /Destinations|ปลายทาง/i.test(b.textContent || "")
   );
   if (mobileDestBtn) {
     const li = mobileDestBtn.parentElement;

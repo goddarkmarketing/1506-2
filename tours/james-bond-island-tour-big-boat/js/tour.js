@@ -100,14 +100,19 @@
 
   /* ---------- Destinations (local) ---------- */
   const destinations = [
-    { label: "Popular tours", href: HOME + "#popular" },
-    { label: "Phi Phi tours", href: "../phi-phi-maya-bay-bamboo-island-tour-speedboat/" },
+    { label: "Chiang Mai", href: "../../destinations/chiang-mai/" },
+    { label: "Chiang Rai", href: "../../destinations/chiang-rai/" },
+    { label: "Krabi", href: "../../destinations/krabi/" },
+    { label: "Koh Samui", href: "../../destinations/koh-samui/" },
+    { label: "Phi Phi Bamboo Island", href: "../phi-phi-maya-bay-bamboo-island-tour-speedboat/" },
+    { label: "Phi Phi & Khai Islands", href: "../phi-phi-maya-bay-khai-islands-speedboat/" },
     { label: "James Bond Island", href: "../james-bond-island-tour-speedboat/" },
     { label: "Khai Islands", href: "../khai-islands-half-day-tour/" },
     { label: "Similan Islands", href: "../similan-island-tour-from-phuket/" },
     { label: "Raya & Coral Island", href: "../raya-coral-island-tour-phuket-full-day/" },
     { label: "ATV Tour", href: "../phuket-atv-tour/" },
     { label: "City Tour", href: "../phuket-city-tour-half-day/" },
+    { label: "All destinations", href: "../../destinations/" },
   ];
   const destHtml = destinations
     .map(
@@ -159,6 +164,20 @@
     if (t === "Tours") a.setAttribute("href", HOME + "#popular");
     if (t === "FAQ") a.setAttribute("href", "../../faq/");
     if (t === "Contact Us") a.setAttribute("href", "../../contact/");
+  });
+
+  /* ---------- How to book link next to FAQ ---------- */
+  qsa("nav").forEach((nav) => {
+    if (qsa("a", nav).some((a) => /how to book/i.test(a.textContent))) return;
+    const faq = qsa("a", nav).find((a) => a.textContent.trim() === "FAQ");
+    if (!faq) return;
+    const item = faq.closest("li");
+    if (!item) return;
+    const clone = item.cloneNode(true);
+    const link = clone.querySelector("a");
+    link.textContent = "How to book";
+    link.setAttribute("href", "../../how-to-book/");
+    item.parentElement.insertBefore(clone, item);
   });
 
   /* ---------- Currency / search: stay local ---------- */

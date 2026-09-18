@@ -28,7 +28,9 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
   #booking-app .dg-qty .ctrl{display:flex;align-items:center;gap:.55rem}
   #booking-app .dg-qty button{width:2rem;height:2rem;border-radius:999px;border:1px solid rgba(31,53,76,.12);background:#fff;cursor:pointer;font-size:1.1rem;line-height:1}
   #booking-app .dg-qty .val{min-width:1.25rem;text-align:center;font-weight:700}
-  #booking-app .dg-pay label{display:flex;gap:.75rem;align-items:flex-start;border:1px solid rgba(31,53,76,.12);border-radius:.9rem;padding:.85rem .95rem;cursor:pointer;margin-bottom:.65rem}
+  #booking-app .dg-pay label{display:flex;flex-direction:row-reverse;gap:.75rem;align-items:center;border:1px solid rgba(31,53,76,.12);border-radius:.9rem;padding:.85rem .95rem;cursor:pointer;margin-bottom:.65rem}
+  #booking-app .dg-pay label > div{flex:1;min-width:0}
+  #booking-app .dg-pay label input{flex-shrink:0;margin:0}
   #booking-app .dg-pay label:has(input:checked){border-color:rgba(17,182,163,.55);background:rgba(17,182,163,.06)}
   #booking-app .panel[hidden]{display:none!important}
   #booking-app .dg-lines{display:grid;gap:.45rem;margin:1rem 0;font-size:.95rem}
@@ -41,14 +43,17 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
   <div id="empty-state" class="rounded-2xl border border-black/10 bg-white p-10 text-center shadow-sm" hidden>
     <h2 class="text-2xl font-bold text-[color:var(--brand-secondary)]">No tour selected</h2>
     <p class="mt-2 text-zinc-600">Pick a tour first, then tap <strong>Book now</strong> on the tour page.</p>
-    <a href="../index.html#popular" class="mt-6 inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--cta)] px-6 text-base font-semibold text-white shadow-md hover:opacity-90">Browse tours</a>
+    <div class="mt-6 flex flex-wrap justify-center gap-2">
+      <a href="../index.html#popular" class="inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--cta)] px-6 text-base font-semibold text-white shadow-md hover:opacity-90">Phuket tours</a>
+      <a href="../destinations/" class="inline-flex h-11 items-center justify-center rounded-xl border border-zinc-200 px-6 text-base font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50">Other destinations</a>
+    </div>
   </div>
 
   <div id="booking-app" hidden>
     <ol class="dg-steps" id="stepper" aria-label="Booking steps">
       <li data-step="1" class="active"><span class="n">1</span> Trip</li>
       <li data-step="2"><span class="n">2</span> Details</li>
-      <li data-step="3"><span class="n">3</span> Payment</li>
+      <li data-step="3"><span class="n">3</span> Confirm</li>
       <li data-step="4"><span class="n">4</span> Done</li>
     </ol>
 
@@ -59,13 +64,13 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
           <div class="mt-4 space-y-4">
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="tour-date">Tour date</label>
-              <input type="date" id="tour-date" required class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm font-semibold text-[color:var(--brand-secondary)] outline-none focus:border-[color:var(--brand-primary)]">
+              <input type="date" id="tour-date" required class="dg-input mt-2 w-full rounded-xl border border-zinc-200 px-3 text-sm font-semibold text-[color:var(--brand-secondary)] outline-none focus:border-[color:var(--brand-primary)]">
               <div class="mt-1 text-sm text-red-600" id="date-err" hidden>Please choose a date (tomorrow or later).</div>
             </div>
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500">Adults (13+)</label>
               <div class="dg-qty mt-2" data-qty="adults">
-                <div class="text-sm text-zinc-600">THB <span id="adult-price-label">0</span> each</div>
+                <div class="text-sm text-zinc-600" id="adult-price-line">THB <span id="adult-price-label">0</span> each</div>
                 <div class="ctrl">
                   <button type="button" data-delta="-1" aria-label="Fewer adults">−</button>
                   <span class="val" id="adults-val">1</span>
@@ -76,7 +81,7 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500">Children (4–12)</label>
               <div class="dg-qty mt-2" data-qty="children">
-                <div class="text-sm text-zinc-600">THB <span id="child-price-label">0</span> each</div>
+                <div class="text-sm text-zinc-600" id="child-price-line">THB <span id="child-price-label">0</span> each</div>
                 <div class="ctrl">
                   <button type="button" data-delta="-1" aria-label="Fewer children">−</button>
                   <span class="val" id="children-val">0</span>
@@ -107,35 +112,35 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
           <div class="mt-4 grid gap-4 sm:grid-cols-2">
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="guest-name">Full name</label>
-              <input id="guest-name" autocomplete="name" required placeholder="As on passport / hotel" class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+              <input id="guest-name" autocomplete="name" required placeholder="As on passport / hotel" class="dg-input mt-2 w-full rounded-xl border border-zinc-200 px-3 text-sm outline-none focus:border-[color:var(--brand-primary)]">
             </div>
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="guest-email">Email</label>
-              <input id="guest-email" type="email" autocomplete="email" required placeholder="you@email.com" class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+              <input id="guest-email" type="email" autocomplete="email" required placeholder="you@email.com" class="dg-input mt-2 w-full rounded-xl border border-zinc-200 px-3 text-sm outline-none focus:border-[color:var(--brand-primary)]">
             </div>
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="guest-phone">Phone / WhatsApp</label>
-              <input id="guest-phone" type="tel" autocomplete="tel" required placeholder="+66 …" class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+              <input id="guest-phone" type="tel" autocomplete="tel" required placeholder="+66 …" class="dg-input mt-2 w-full rounded-xl border border-zinc-200 px-3 text-sm outline-none focus:border-[color:var(--brand-primary)]">
             </div>
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="guest-hotel">Hotel / pickup point</label>
-              <input id="guest-hotel" required placeholder="Hotel name or landmark" class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+              <input id="guest-hotel" required placeholder="Hotel name or landmark" class="dg-input mt-2 w-full rounded-xl border border-zinc-200 px-3 text-sm outline-none focus:border-[color:var(--brand-primary)]">
             </div>
             <div class="sm:col-span-2">
               <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="guest-notes">Notes (optional)</label>
-              <textarea id="guest-notes" rows="3" placeholder="Flight time, special requests, child ages…" class="mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]"></textarea>
+              <textarea id="guest-notes" rows="3" placeholder="Flight time, special requests, child ages…" class="dg-textarea mt-2 w-full rounded-xl border border-zinc-200 px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]"></textarea>
             </div>
           </div>
-          <div class="mt-1 text-sm text-red-600" id="details-err" hidden>Please fill in name, email, phone and pickup.</div>
+          <div class="mt-1 text-sm text-red-600" id="details-err" hidden>Please fill in name, email, phone (at least 8 digits) and pickup.</div>
           <div class="mt-6 flex flex-wrap gap-2">
             <button type="button" class="inline-flex h-11 items-center justify-center rounded-xl border border-zinc-200 px-5 text-sm font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50" data-next="1">Back</button>
-            <button type="button" class="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[color:var(--cta)] px-5 text-sm font-semibold text-white shadow-md hover:opacity-90" data-next="3">Continue to payment</button>
+            <button type="button" class="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[color:var(--cta)] px-5 text-sm font-semibold text-white shadow-md hover:opacity-90" data-next="3">Continue to confirm</button>
           </div>
         </section>
 
         <section class="rounded-2xl border border-black/10 bg-white p-5 shadow-sm sm:p-7 panel" data-panel="3" hidden>
-          <h2 class="text-xl font-bold text-[color:var(--brand-secondary)]">Payment</h2>
-          <div class="dg-pay mt-4">
+          <h2 class="text-xl font-bold text-[color:var(--brand-secondary)]">Confirm &amp; deposit</h2>
+          <div class="dg-pay mt-4" id="pay-mode-group">
             <label>
               <input type="radio" name="pay-mode" value="deposit" checked>
               <div>
@@ -152,30 +157,49 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
             </label>
           </div>
           <div class="mt-2 space-y-3 rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
-            <div>
-              <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="card-name">Name on card</label>
-              <input id="card-name" placeholder="Demo Cardholder" autocomplete="cc-name" class="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+            <div class="rounded-xl border border-[color:var(--brand-accent)]/30 bg-[color:var(--brand-accent)]/10 p-3.5" id="deposit-notice">
+              <strong class="block text-sm text-[color:var(--brand-secondary)]" id="deposit-notice-title">Deposit is paid to our company account only</strong>
+              <p class="mt-1 text-sm text-zinc-600" id="deposit-notice-body">Transfer to <strong>บริษัท ดีแอนด์จี ฮอลิเดย์ (ประเทศไทย) จำกัด</strong> (D&amp;G Holiday (Thailand) Co., Ltd.). Our team sends you the account number and an official deposit receipt after this request.</p>
             </div>
             <div>
-              <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="card-number">Card number</label>
-              <input id="card-number" inputmode="numeric" placeholder="4242 4242 4242 4242" autocomplete="cc-number" class="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="card-exp">Expiry</label>
-                <input id="card-exp" placeholder="12 / 28" autocomplete="cc-exp" class="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
-              </div>
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wide text-zinc-500" for="card-cvc">CVC</label>
-                <input id="card-cvc" inputmode="numeric" placeholder="123" autocomplete="cc-csc" class="mt-2 w-full rounded-xl border border-zinc-200 bg-white px-3 py-2.5 text-sm outline-none focus:border-[color:var(--brand-primary)]">
+              <p class="text-xs font-semibold uppercase tracking-wide text-zinc-500">Where should we reply?</p>
+              <div class="dg-pay mt-2" id="channel-group">
+                <label>
+                  <input type="radio" name="contact-channel" value="line" checked>
+                  <div>
+                    <strong class="block text-[color:var(--brand-secondary)]">Line · @354ejhoo</strong>
+                    <span class="mt-0.5 block text-sm text-zinc-600">Fastest for Thai-speaking staff.</span>
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="contact-channel" value="whatsapp">
+                  <div>
+                    <strong class="block text-[color:var(--brand-secondary)]">WhatsApp · +66 82 147 9553</strong>
+                    <span class="mt-0.5 block text-sm text-zinc-600">Your booking summary is pre-filled for you.</span>
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="contact-channel" value="messenger">
+                  <div>
+                    <strong class="block text-[color:var(--brand-secondary)]">Messenger · dgholidaythailand</strong>
+                    <span class="mt-0.5 block text-sm text-zinc-600">Opens our Facebook inbox.</span>
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="contact-channel" value="phone">
+                  <div>
+                    <strong class="block text-[color:var(--brand-secondary)]">Phone · 084-2148155 / 082-1479553</strong>
+                    <span class="mt-0.5 block text-sm text-zinc-600">Call us to check availability right away.</span>
+                  </div>
+                </label>
               </div>
             </div>
           </div>
-          <p class="mt-3 text-sm text-zinc-500">Mock payment for the D&amp;G Holiday demo. No card data is stored or charged.</p>
-          <div class="mt-1 text-sm text-red-600" id="pay-err" hidden>Enter mock card details (any values work for this demo).</div>
+          <p class="mt-3 text-sm text-zinc-500">No card details are collected on this website. Availability is confirmed by our staff before any payment. <a class="font-semibold text-[color:var(--brand-accent)] hover:underline" href="../how-to-book/">See the full booking steps</a>.</p>
+          <div class="mt-1 text-sm text-red-600" id="pay-err" hidden>Please choose how we should contact you.</div>
           <div class="mt-6 flex flex-wrap gap-2">
             <button type="button" class="inline-flex h-11 items-center justify-center rounded-xl border border-zinc-200 px-5 text-sm font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50" data-next="2">Back</button>
-            <button type="button" class="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[color:var(--cta)] px-5 text-sm font-semibold text-white shadow-md hover:opacity-90" id="pay-btn">Confirm &amp; pay <span id="pay-btn-amount"></span></button>
+            <button type="button" class="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[color:var(--cta)] px-5 text-sm font-semibold text-white shadow-md hover:opacity-90" id="pay-btn">Send booking request <span id="pay-btn-amount"></span></button>
           </div>
         </section>
 
@@ -183,17 +207,35 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
           <div class="mb-4 flex gap-3 rounded-2xl border border-[color:var(--brand-accent)]/30 bg-[color:var(--brand-accent)]/10 p-4">
             <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[color:var(--brand-accent)] text-sm font-extrabold text-white">✓</div>
             <div>
-              <strong class="block text-[color:var(--brand-secondary)]">Booking confirmed</strong>
-              <span class="mt-0.5 block text-sm text-zinc-600">Your demo voucher is ready. Show it on your phone at pickup.</span>
+              <strong class="block text-[color:var(--brand-secondary)]">Booking request sent</strong>
+              <span class="mt-0.5 block text-sm text-zinc-600">Keep your reference code. Our staff confirms availability and sends the deposit details.</span>
             </div>
           </div>
-          <div class="mb-4 rounded-2xl border border-dashed border-[color:var(--brand-accent)]/50 bg-gradient-to-b from-[color:var(--brand-accent)]/10 to-white p-4">
-            <div class="text-sm text-zinc-500">Voucher code</div>
-            <p class="mt-1 text-2xl font-extrabold tracking-wide text-[color:var(--brand-secondary)]" id="voucher-code">DG-XXXX</p>
+          <div class="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-dashed border-[color:var(--brand-accent)]/50 bg-gradient-to-b from-[color:var(--brand-accent)]/10 to-white p-4">
+            <div class="min-w-0">
+              <div class="text-sm text-zinc-500">Reference code</div>
+              <p class="mt-1 text-2xl font-extrabold tracking-wide text-[color:var(--brand-secondary)]" id="voucher-code">DG-XXXX</p>
+            </div>
+            <button type="button" class="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 text-sm font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50" id="print-voucher" aria-label="Print or save booking">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>
+              Print / save
+            </button>
           </div>
           <div class="dg-lines" id="confirm-lines"></div>
+
+          <div class="mt-5 rounded-2xl border border-black/10 bg-zinc-50 p-4">
+            <strong class="block text-sm text-[color:var(--brand-secondary)]">What happens next</strong>
+            <ol class="mt-2 space-y-1.5 text-sm text-zinc-600">
+              <li>1. Staff replies on your chosen channel to confirm seats.</li>
+              <li>2. Pay the deposit to <strong>บริษัท ดีแอนด์จี ฮอลิเดย์ (ประเทศไทย) จำกัด</strong> and receive the deposit receipt.</li>
+              <li>3. Send your passport page (valid more than 6 months) if the trip needs it.</li>
+              <li>4. Pay the balance 20–30 days before departure and get the invoice.</li>
+              <li>5. 3–5 days before departure you receive the appointment sheet; 1 day before, the tour leader calls you.</li>
+            </ol>
+          </div>
+
           <div class="mt-6 flex flex-wrap gap-2">
-            <button type="button" class="inline-flex h-11 items-center justify-center rounded-xl border border-zinc-200 px-5 text-sm font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50" id="print-voucher">Print / save</button>
+            <button type="button" class="inline-flex h-11 items-center justify-center rounded-xl border border-zinc-200 px-5 text-sm font-semibold text-[color:var(--brand-secondary)] hover:bg-zinc-50" id="copy-summary">Copy summary</button>
             <a href="../index.html#popular" class="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[color:var(--cta)] px-5 text-sm font-semibold text-white shadow-md hover:opacity-90">Book another tour</a>
           </div>
         </section>
@@ -300,24 +342,30 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
           <li><a class="text-white/70 hover:text-white" href="../index.html#popular">Tours</a></li>
           <li><a class="text-white/70 hover:text-white" href="../faq/">FAQ</a></li>
           <li><a class="text-white/70 hover:text-white" href="../contact/">Contact Us</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../how-to-book/">How to book</a></li>
           <li><a class="text-white/70 hover:text-white" href="../index.html#how-booking-works">How booking works</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../index.html#credentials">Credentials</a></li>
         </ul>
       </div>
       <div>
         <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-white">Destinations</h2>
         <ul class="mt-4 space-y-2.5 text-sm">
-          <li><a class="text-white/70 hover:text-white" href="../tours/phi-phi-maya-bay-bamboo-island-tour-speedboat/">Koh Phi Phi</a></li>
-          <li><a class="text-white/70 hover:text-white" href="../tours/james-bond-island-tour-speedboat/">James Bond Island</a></li>
-          <li><a class="text-white/70 hover:text-white" href="../tours/khai-islands-half-day-tour/">Khai Islands</a></li>
-          <li><a class="text-white/70 hover:text-white" href="../tours/similan-island-tour-from-phuket/">Similan Islands</a></li>
-          <li><a class="text-white/70 hover:text-white" href="../tours/raya-coral-island-tour-phuket-full-day/">Raya &amp; Coral</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../destinations/chiang-mai/">Chiang Mai</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../destinations/chiang-rai/">Chiang Rai</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../destinations/krabi/">Krabi</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../destinations/koh-samui/">Koh Samui</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../index.html#popular">Phuket tours</a></li>
+          <li><a class="text-white/70 hover:text-white" href="../destinations/">All destinations</a></li>
         </ul>
       </div>
       <div>
         <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-white">Contact</h2>
         <ul class="mt-4 space-y-2.5 text-sm">
           <li><a class="text-white/70 hover:text-white" href="https://www.google.com/maps/dir/19.9753728,99.8703104/13.75101,100.83938/@16.8331169,97.6363631,7z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">852/7 พฤกษา อเวนิว Thap Yao, Lat Krabang, Bangkok 10520</a></li>
+          <li><a class="text-white/70 hover:text-white" href="tel:+66842148155">084 214 8155</a></li>
           <li><a class="text-white/70 hover:text-white" href="tel:+66821479553">082 147 9553</a></li>
+          <li><a class="text-white/70 hover:text-white" href="https://line.me/R/ti/p/~@354ejhoo" target="_blank" rel="noopener noreferrer">Line @354ejhoo</a></li>
+          <li><a class="text-white/70 hover:text-white" href="http://m.me/dgholidaythailand" target="_blank" rel="noopener noreferrer">Messenger</a></li>
           <li><a class="text-white/70 hover:text-white" href="mailto:dgholidaythailand@gmail.com">dgholidaythailand@gmail.com</a></li>
           <li><a class="text-white/70 hover:text-white" href="https://wa.me/66821479553" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
         </ul>
@@ -332,4 +380,8 @@ body:has(.zip-legacy) footer{margin-top:0}.zip-legacy{font-family:var(--font-leg
     </div>
   </div>
 </footer><script>requestAnimationFrame(function(){$RT=performance.now()});</script><script>$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
-$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><style id="kt-page-fix">.grid-rows-\[1fr\]{grid-template-rows:1fr}</style><script src="js/page.js" defer></script><script src="js/book.js" defer></script><script src="../js/dg-reviews.js" defer></script><script src="../js/dg-float-contact.js" defer></script></body></html>
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")</script><style id="kt-page-fix">.grid-rows-\[1fr\]{grid-template-rows:1fr}
+/* This page ships a pre-compiled Tailwind build with no col-span utility. */
+@media (min-width:40rem){#booking-app .sm\:col-span-2{grid-column:1 / -1}}
+#booking-app .dg-input{height:2.75rem}
+#booking-app .dg-textarea{min-height:5.5rem;resize:vertical}</style><script src="js/page.js" defer></script><script src="js/book.js" defer></script><script src="../js/dg-reviews.js" defer></script><script src="../js/dg-float-contact.js" defer></script><script src="../js/dg-i18n.js" defer></script></body></html>

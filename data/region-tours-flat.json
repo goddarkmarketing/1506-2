@@ -1,0 +1,795 @@
+[
+  {
+    "slug": "chiang-mai-elephant-hilltribe-day",
+    "title": "Chiang Mai Elephant Camp, Bamboo Raft & Hill Tribes Day Tour",
+    "duration": "Full day (~9.5 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1700,
+    "priceLabel": "1,700",
+    "childPrice": 1300,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-mai-elephant-hilltribe-day-1.jpg",
+      "images/regions/chiang-mai-elephant-hilltribe-day-2.jpg",
+      "images/regions/chiang-mai-elephant-hilltribe-day-3.jpg",
+      "images/regions/chiang-mai-elephant-hilltribe-day-4.jpg"
+    ],
+    "highlights": [
+      "Hotel pickup in Chiang Mai city",
+      "Elephant camp experience & show",
+      "Bamboo rafting through teak forest",
+      "Hill-tribe villages (Long Neck & more)",
+      "Northern lunch included"
+    ],
+    "description": "A full day from Chiang Mai city hotels: elephant camp safari vibes, bamboo rafting on the Mae Taeng river, an art stop, and unhurried hill-tribe villages including Long Neck communities.",
+    "itinerary": [
+      "08:00 Hotel pickup (Chiang Mai city)",
+      "09:15 Elephant camp — care, show & ride experience",
+      "11:00 Ox-cart return to base camp",
+      "12:30 Northern lunch",
+      "13:30 Bamboo rafting",
+      "14:30 Art gallery",
+      "15:30 Hill-tribe villages",
+      "17:30 Return to hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Chiang Mai",
+      "Family"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-mai-3d2n-private",
+    "title": "Chiang Mai 3 Days 2 Nights Private Group",
+    "duration": "3 days 2 nights",
+    "rating": "New",
+    "reviews": "0",
+    "price": 0,
+    "priceLabel": "Enquire",
+    "childPrice": 0,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "package",
+    "images": [
+      "images/regions/chiang-mai-3d2n-private-1.jpg",
+      "images/regions/chiang-mai-3d2n-private-2.jpg",
+      "images/regions/chiang-mai-3d2n-private-3.jpg",
+      "images/regions/chiang-mai-3d2n-private-4.jpg"
+    ],
+    "highlights": [
+      "Doi Inthanon — highest peak in Thailand",
+      "Mon Jam skywalk & flower fields",
+      "Hinoki Land Japanese-inspired landmark",
+      "Mae Kampong village life",
+      "Khun Khantoke dinner with Lanna show"
+    ],
+    "description": "Private Chiang Mai immersion with Doi Inthanon, Mon Jam skywalk, Hinoki Land, Sirikit Botanical Garden, Mae Kampong village, Doi Kham and more — Driver Guide, hotels and flights coordination as in the program.",
+    "itinerary": [
+      "Day 1: Fly in · Doi Inthanon · overnight Mon Jam area",
+      "Day 2: Mon Jam skywalk · Wat Den Salee · Hinoki Land · Botanical Garden · Khantoke dinner · overnight Tha Phae",
+      "Day 3: Mae Kampong · Doi Kham · Wat Umong · cafe stop · fly out"
+    ],
+    "badges": [
+      "Package",
+      "Private",
+      "3D2N"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-mai-doi-suthep-half-day",
+    "title": "Doi Suthep Temple & City Viewpoint Half-Day Tour",
+    "duration": "Half day (~4 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 800,
+    "priceLabel": "800",
+    "childPrice": 600,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-mai-doi-suthep-half-day-1.jpg",
+      "images/regions/chiang-mai-doi-suthep-half-day-2.jpg",
+      "images/regions/chiang-mai-doi-suthep-half-day-3.jpg",
+      "images/regions/chiang-mai-doi-suthep-half-day-4.jpg"
+    ],
+    "highlights": [
+      "Wat Phra That Doi Suthep golden chedi",
+      "306-step Naga stairway (lift available)",
+      "Ping valley viewpoint photo stop",
+      "Back in the old city by early afternoon"
+    ],
+    "description": "The short introduction to Chiang Mai: a mountain road up to the city's most revered temple, the golden chedi of Wat Phra That Doi Suthep, and a viewpoint over the whole Ping valley. Easy pace, back in town for lunch.",
+    "itinerary": [
+      "08:30 Hotel pickup in Chiang Mai city",
+      "09:15 Doi Suthep mountain road · viewpoint stop",
+      "09:45 Wat Phra That Doi Suthep with guide",
+      "11:30 Free time for photos and coffee",
+      "12:30 Drop-off at your hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Temples",
+      "Chiang Mai"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-mai-doi-inthanon-day",
+    "title": "Doi Inthanon, Twin Pagodas & Karen Village Day Tour",
+    "duration": "Full day (~10 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1400,
+    "priceLabel": "1,400",
+    "childPrice": 1100,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-mai-doi-inthanon-day-1.jpg",
+      "images/regions/chiang-mai-doi-inthanon-day-2.jpg",
+      "images/regions/chiang-mai-doi-inthanon-day-3.jpg",
+      "images/regions/chiang-mai-doi-inthanon-day-4.jpg"
+    ],
+    "highlights": [
+      "Wachirathan Waterfall",
+      "Doi Inthanon summit and nature trail",
+      "Royal Twin Pagodas and gardens",
+      "Ban Mae Klang Luang rice terraces & village coffee"
+    ],
+    "description": "A full day on the highest mountain in Thailand. Cool air, a big waterfall, the Royal Twin Pagodas with their mountain gardens, and a Karen village where the rice terraces run right up to the coffee plots.",
+    "itinerary": [
+      "07:30 Hotel pickup in Chiang Mai city",
+      "09:30 Wachirathan Waterfall",
+      "11:00 Doi Inthanon summit · Ang Ka nature trail",
+      "12:30 Thai lunch near the park",
+      "13:30 Royal Twin Pagodas (Phra Mahathat Napamethanidol & Napaphonphumisiri)",
+      "15:00 Ban Mae Klang Luang rice terraces and coffee stop",
+      "17:30 Back in Chiang Mai city"
+    ],
+    "badges": [
+      "Day trip",
+      "Nature",
+      "Chiang Mai"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-mai-elephant-inthanon-hike-day",
+    "title": "Elephant Care & Pha Dok Siew Trail Day Tour",
+    "duration": "Full day (~10 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 2400,
+    "priceLabel": "2,400",
+    "childPrice": 1900,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-mai-elephant-inthanon-hike-day-1.jpg",
+      "images/regions/chiang-mai-elephant-inthanon-hike-day-2.jpg",
+      "images/regions/chiang-mai-elephant-inthanon-hike-day-3.jpg",
+      "images/regions/chiang-mai-elephant-inthanon-hike-day-4.jpg"
+    ],
+    "highlights": [
+      "Feeding and observing elephants (no riding)",
+      "Pha Dok Siew nature trail with a Karen guide",
+      "Waterfall swim stop",
+      "Village lunch and highland coffee tasting"
+    ],
+    "description": "For guests who want elephants without a ride: watch and feed the herd at a Karen-run camp in the morning, then walk the Pha Dok Siew trail through rice terraces and coffee plots to the waterfall with a village guide.",
+    "itinerary": [
+      "07:30 Hotel pickup in Chiang Mai city",
+      "09:30 Elephant observation, feeding and learning about care",
+      "11:30 Transfer into Doi Inthanon National Park",
+      "12:30 Lunch in Ban Mae Klang Luang",
+      "13:30 Pha Dok Siew trail walk (~2 hours, easy to moderate)",
+      "15:30 Waterfall stop and village coffee",
+      "18:00 Back in Chiang Mai city"
+    ],
+    "badges": [
+      "Day trip",
+      "Elephants",
+      "Soft adventure"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-mai-doi-inthanon-private-charter",
+    "title": "Doi Inthanon Private Charter — Car or Van",
+    "duration": "Full day (7–8 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 0,
+    "priceLabel": "Enquire",
+    "childPrice": 0,
+    "destination": "Chiang Mai",
+    "region": "chiang-mai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-mai-doi-inthanon-private-charter-1.jpg",
+      "images/regions/chiang-mai-doi-inthanon-private-charter-2.jpg",
+      "images/regions/chiang-mai-doi-inthanon-private-charter-3.jpg",
+      "images/regions/chiang-mai-doi-inthanon-private-charter-4.jpg"
+    ],
+    "highlights": [
+      "Private air-con car or van, price per vehicle",
+      "Flexible route and departure time",
+      "Waterfalls, summit and pagodas at your own pace",
+      "Guide optional — driver only keeps the cost down"
+    ],
+    "description": "Your own vehicle and driver for the Doi Inthanon loop, so you set the pace and pick the stops. Priced per vehicle rather than per person, which usually works out cheaper for families and small groups.",
+    "itinerary": [
+      "08:00 Hotel pickup (or the time you prefer)",
+      "Mae Klang and Wachirathan waterfalls",
+      "Doi Inthanon summit and Ang Ka nature trail",
+      "Royal Twin Pagodas and mountain gardens",
+      "Optional: Mae Ya Waterfall, Karen village, coffee farm",
+      "Back in Chiang Mai after 7–8 hours"
+    ],
+    "badges": [
+      "Private charter",
+      "Flexible",
+      "Chiang Mai"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-phu-chi-fa-day",
+    "title": "Phu Chi Fa Day Tour from Chiang Rai",
+    "duration": "Full day (~8.5 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 2000,
+    "priceLabel": "2,000",
+    "childPrice": 2000,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-phu-chi-fa-day-1.jpg",
+      "images/regions/chiang-rai-phu-chi-fa-day-2.jpg",
+      "images/regions/chiang-rai-phu-chi-fa-day-3.jpg",
+      "images/regions/chiang-rai-phu-chi-fa-day-4.jpg"
+    ],
+    "highlights": [
+      "Phu Chi Fa cliff viewpoint",
+      "Optional Phu Chi Dao & Phu Chi Duean 4WD",
+      "Lunch included",
+      "Private van / SUV options"
+    ],
+    "description": "Climb the Chiang Rai highland ridge to Phu Chi Fa (1,628 m) with optional 4WD visits to Phu Chi Dao and Phu Chi Duean for Thailand–Laos panoramic views.",
+    "itinerary": [
+      "08:30 Hotel pickup in Chiang Rai",
+      "11:00 Phu Chi Fa viewpoint",
+      "12:00 Lunch · continue to Phu Chi Dao (local 4WD extra)",
+      "14:00 Phu Chi Duean (local 4WD extra)",
+      "17:00 Return to hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Mountains",
+      "Chiang Rai"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-doi-mae-mon-day",
+    "title": "Chiang Rai Temples & Doi Mae Mon Day Tour",
+    "duration": "Full day",
+    "rating": "New",
+    "reviews": "0",
+    "price": 2000,
+    "priceLabel": "2,000",
+    "childPrice": 2000,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-doi-mae-mon-day-1.jpg",
+      "images/regions/chiang-rai-doi-mae-mon-day-2.jpg",
+      "images/regions/chiang-rai-doi-mae-mon-day-3.jpg",
+      "images/regions/chiang-rai-doi-mae-mon-day-4.jpg"
+    ],
+    "highlights": [
+      "Wat Huay Pla Kang (Big Buddha / Guan Yin)",
+      "Wat Rong Khun (White Temple)",
+      "Doi Mae Mon & Hydrangea views",
+      "Boon Rawd Farm stop",
+      "Lunch included"
+    ],
+    "description": "Iconic Chiang Rai temples plus Doi Mae Mon valley views and Boon Rawd Farm — a classic private day from Chiang Rai city or airport.",
+    "itinerary": [
+      "08:30 Pickup hotel / airport",
+      "09:00 Wat Huay Pla Kang",
+      "White Temple · Doi Mae Mon · Mae Mon Valley",
+      "Hydrangea fields · Boon Rawd Farm",
+      "Return Chiang Rai"
+    ],
+    "badges": [
+      "Day trip",
+      "Temples",
+      "Chiang Rai"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-doi-chang-4d3n",
+    "title": "Chiang Rai Doi Chang & Doi Pha Hee 4 Days 3 Nights",
+    "duration": "4 days 3 nights",
+    "rating": "New",
+    "reviews": "0",
+    "price": 8900,
+    "priceLabel": "8,900",
+    "childPrice": 0,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "package",
+    "images": [
+      "images/regions/chiang-rai-doi-chang-4d3n-1.jpg",
+      "images/regions/chiang-rai-doi-chang-4d3n-2.jpg",
+      "images/regions/chiang-rai-doi-chang-4d3n-3.jpg",
+      "images/regions/chiang-rai-doi-chang-4d3n-4.jpg"
+    ],
+    "highlights": [
+      "Golden Triangle & Chiang Saen Sky Walk",
+      "Doi Tung Mae Fah Luang Garden",
+      "Doi Chang coffee village overnight area",
+      "Doi Pha Hee cliff stay",
+      "White Temple · Singha Park · Choui Fong · Blue Temple"
+    ],
+    "description": "Highland Chiang Rai: Golden Triangle & Chiang Saen, Doi Tung gardens, Doi Chang coffee hills, overnight cliff village Doi Pha Hee, White Temple, Singha Park, Choui Fong tea and Blue Temple.",
+    "itinerary": [
+      "Day 1: Chiang Rai airport · Chiang Saen · Golden Triangle · Doi Tung · overnight",
+      "Day 2: Doi Chang Mub viewpoint · Doi Pha Mee · Doi Chang",
+      "Day 3: Doi Chang · White Temple · Singha Park · Wat Huay Pla Kang",
+      "Day 4: Choui Fong · Mae Sai · Blue Temple · airport"
+    ],
+    "badges": [
+      "Package",
+      "4D3N",
+      "Highlands"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-temple-trio-day",
+    "title": "White Temple, Blue Temple & Black House Day Tour",
+    "duration": "Full day (~9 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 3490,
+    "priceLabel": "3,490",
+    "childPrice": 3490,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-temple-trio-day-1.jpg",
+      "images/regions/chiang-rai-temple-trio-day-2.jpg",
+      "images/regions/chiang-rai-temple-trio-day-3.jpg",
+      "images/regions/chiang-rai-temple-trio-day-4.jpg"
+    ],
+    "highlights": [
+      "Wat Rong Khun (White Temple)",
+      "Wat Rong Suea Ten (Blue Temple)",
+      "Baan Dam Museum (Black House)",
+      "Wat Huay Pla Kang and the Big Buddha viewpoint"
+    ],
+    "description": "Chiang Rai's four landmark art sites in one private day: Chalermchai's white temple, the sapphire blue hall of Wat Rong Suea Ten, Thawan Duchanee's Black House, and the nine-tier pagoda at Wat Huay Pla Kang.",
+    "itinerary": [
+      "08:00 Hotel pickup in Chiang Rai",
+      "08:45 Wat Rong Khun with guide",
+      "10:30 Wat Rong Suea Ten",
+      "11:45 Northern Thai lunch",
+      "13:00 Baan Dam Museum",
+      "15:00 Wat Huay Pla Kang · viewpoint",
+      "17:00 Drop-off at your hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Temples",
+      "Private car"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-golden-triangle-day",
+    "title": "Golden Triangle, Mae Sai Border & Hall of Opium Day Tour",
+    "duration": "Full day (~11 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 3500,
+    "priceLabel": "3,500",
+    "childPrice": 3500,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-golden-triangle-day-1.jpg",
+      "images/regions/chiang-rai-golden-triangle-day-2.jpg",
+      "images/regions/chiang-rai-golden-triangle-day-3.jpg",
+      "images/regions/chiang-rai-golden-triangle-day-4.jpg"
+    ],
+    "highlights": [
+      "Wat Rong Khun photo stop",
+      "Mae Sai — northernmost point of Thailand",
+      "Golden Triangle viewpoint at Sop Ruak",
+      "Hall of Opium museum · optional Mekong longtail boat"
+    ],
+    "description": "North to the edge of the country: the White Temple on the way up, the northernmost point of Thailand at Mae Sai, and the Mekong bend at Sop Ruak where Thailand, Laos and Myanmar meet.",
+    "itinerary": [
+      "07:00 Hotel pickup in Chiang Rai",
+      "08:00 Wat Rong Khun",
+      "10:00 Mae Sai border market and northernmost marker",
+      "12:00 Lunch by the Mekong",
+      "13:30 Golden Triangle viewpoint · optional boat to Don Sao (Laos)",
+      "15:00 Hall of Opium or Opium Hall museum",
+      "18:00 Drop-off at your hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Border",
+      "Private car"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-tea-coffee-day",
+    "title": "Choui Fong Tea & Doi Chang Coffee Day Tour",
+    "duration": "Full day (~9 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 3300,
+    "priceLabel": "3,300",
+    "childPrice": 3300,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-tea-coffee-day-1.jpg",
+      "images/regions/chiang-rai-tea-coffee-day-2.jpg",
+      "images/regions/chiang-rai-tea-coffee-day-3.jpg"
+    ],
+    "highlights": [
+      "Choui Fong tea terraces and hillside cafe",
+      "Doi Chang coffee village and roastery",
+      "Highland viewpoints and photo stops",
+      "Wat Rong Suea Ten on the way back"
+    ],
+    "description": "A slow day through the hills that grow Chiang Rai's two famous exports. Walk the terraced tea rows at Choui Fong, then climb to the Doi Chang villages where the arabica is washed and roasted.",
+    "itinerary": [
+      "08:00 Hotel pickup in Chiang Rai",
+      "09:30 Choui Fong tea plantation · tea tasting",
+      "11:30 Drive up to Doi Chang",
+      "12:30 Village lunch",
+      "13:30 Coffee farm walk, washing station and roastery",
+      "15:30 Wat Rong Suea Ten photo stop",
+      "17:00 Drop-off at your hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Food & farm",
+      "Private car"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "chiang-rai-city-highlights-join-day",
+    "title": "Chiang Rai 7 Highlights Join-In Day Tour",
+    "duration": "Full day (~9 hours)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1125,
+    "priceLabel": "1,125",
+    "childPrice": 1125,
+    "destination": "Chiang Rai",
+    "region": "chiang-rai",
+    "type": "day",
+    "images": [
+      "images/regions/chiang-rai-city-highlights-join-day-1.jpg",
+      "images/regions/chiang-rai-city-highlights-join-day-3.jpg",
+      "images/regions/chiang-rai-city-highlights-join-day-4.jpg"
+    ],
+    "highlights": [
+      "Wat Rong Khun (White Temple)",
+      "Wat Rong Suea Ten (Blue Temple)",
+      "Baan Dam Museum and Wat Huay Pla Kang",
+      "Singha Park, Wat Phra Kaew and the clock tower"
+    ],
+    "description": "The budget way to see Chiang Rai: a shared air-con van covering seven landmarks in one day, from the White Temple to Singha Park and the golden clock tower in town.",
+    "itinerary": [
+      "08:00 Pickup from the meeting point or your hotel in town",
+      "08:45 Wat Rong Khun",
+      "10:15 Wat Rong Suea Ten",
+      "11:15 Wat Huay Pla Kang",
+      "12:15 Lunch stop (own account)",
+      "13:30 Baan Dam Museum",
+      "15:00 Singha Park",
+      "16:30 Wat Phra Kaew and the golden clock tower",
+      "17:00 Drop-off in town"
+    ],
+    "badges": [
+      "Day trip",
+      "Budget",
+      "Join-in group"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "krabi-emerald-pool-hot-spring-day",
+    "title": "Krabi Emerald Pool & Hot Spring Day Tour",
+    "duration": "Full day",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1150,
+    "priceLabel": "1,150",
+    "childPrice": 950,
+    "destination": "Krabi",
+    "region": "krabi",
+    "type": "day",
+    "images": [
+      "images/regions/krabi-emerald-pool-hot-spring-day-1.jpg",
+      "images/regions/krabi-emerald-pool-hot-spring-day-2.jpg",
+      "images/regions/krabi-emerald-pool-hot-spring-day-3.jpg",
+      "images/regions/krabi-emerald-pool-hot-spring-day-4.jpg"
+    ],
+    "highlights": [
+      "Hot spring waterfall (Unseen Thailand)",
+      "Emerald Pool swim",
+      "Tiger Cave Temple",
+      "Hotel pickup from Krabi area",
+      "Lunch included"
+    ],
+    "description": "Swim in the natural Emerald Pool, soak at the hot springs, and visit Tiger Cave Temple on a classic Krabi land day.",
+    "itinerary": [
+      "07:50–08:30 Hotel pickup toward Khlong Thom",
+      "10:00 Hot spring soak (~42°C)",
+      "12:00 Lunch",
+      "Emerald Pool swim",
+      "14:30 Tiger Cave Temple",
+      "16:00 Return hotel"
+    ],
+    "badges": [
+      "Day trip",
+      "Krabi",
+      "Nature"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "krabi-7-islands-sunset",
+    "title": "Krabi 7 Islands Sunset Tour",
+    "duration": "Half day (14:00–19:00)",
+    "rating": "New",
+    "reviews": "0",
+    "price": 890,
+    "priceLabel": "890",
+    "childPrice": 0,
+    "destination": "Krabi",
+    "region": "krabi",
+    "type": "day",
+    "images": [
+      "images/regions/krabi-7-islands-sunset-1.jpg",
+      "images/regions/krabi-7-islands-sunset-2.jpg",
+      "images/regions/krabi-7-islands-sunset-3.jpg",
+      "images/regions/krabi-7-islands-sunset-4.jpg"
+    ],
+    "highlights": [
+      "Chicken Island photo stop",
+      "Thale Waek sandbar",
+      "Poda Island clear water",
+      "Sunset + buffet"
+    ],
+    "description": "Afternoon boat to Chicken Island, Thale Waek sandbar, Poda Island and more — finish with a Krabi sunset and buffet.",
+    "itinerary": [
+      "13:30–14:00 Pickup Ao Nang / town / Khlong Muang",
+      "14:30 Depart Ao Nang beach",
+      "Island hopping & snorkel stops",
+      "Sunset viewing",
+      "Return ~19:00"
+    ],
+    "badges": [
+      "Sunset",
+      "Islands",
+      "Krabi"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "krabi-phi-phi-3d2n",
+    "title": "Krabi / Phuket–Phi Phi 3 Days 2 Nights Package",
+    "duration": "3 days 2 nights",
+    "rating": "New",
+    "reviews": "0",
+    "price": 4800,
+    "priceLabel": "4,800",
+    "childPrice": 0,
+    "destination": "Krabi",
+    "region": "krabi",
+    "type": "package",
+    "images": [
+      "images/regions/krabi-phi-phi-3d2n-1.jpg",
+      "images/regions/krabi-phi-phi-3d2n-2.jpg",
+      "images/regions/krabi-phi-phi-3d2n-3.jpg",
+      "images/regions/krabi-phi-phi-3d2n-4.jpg"
+    ],
+    "highlights": [
+      "Airport / hotel–pier transfers",
+      "Ferry Phuket or Krabi ↔ Phi Phi",
+      "2 nights Phi Phi hotel + breakfast",
+      "Flexible island free time"
+    ],
+    "description": "Airport transfer, ferry tickets Phuket or Krabi–Phi Phi return, and 2 nights on Phi Phi. Optional snorkel trip if you catch the morning boat.",
+    "itinerary": [
+      "Day 1: Arrive Phuket/Krabi · ferry to Phi Phi · overnight",
+      "Day 2: Free day on Phi Phi",
+      "Day 3: Breakfast · ferry return · airport transfer"
+    ],
+    "badges": [
+      "Package",
+      "3D2N",
+      "Phi Phi"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "koh-samui-zipline-adventure",
+    "title": "Koh Samui Jungle Zipline Adventure",
+    "duration": "1–2 hours",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1800,
+    "priceLabel": "1,800",
+    "childPrice": 0,
+    "destination": "Koh Samui",
+    "region": "koh-samui",
+    "type": "day",
+    "images": [
+      "images/regions/koh-samui-zipline-adventure-1.jpg",
+      "images/regions/koh-samui-zipline-adventure-2.jpg",
+      "images/regions/koh-samui-zipline-adventure-3.jpg"
+    ],
+    "highlights": [
+      "Safety briefing & practice lines",
+      "Silver 22 / Gold 33 platforms",
+      "Hotel pickup (selected zones)"
+    ],
+    "description": "Fly through the Samui canopy on a guided zipline course — Silver (22 platforms) or Gold (33 platforms) packages with hotel pickup in designated zones.",
+    "itinerary": [
+      "Hotel pickup",
+      "Safety briefing & gear check",
+      "Zipline platforms course",
+      "Return transfer"
+    ],
+    "badges": [
+      "Adventure",
+      "Samui",
+      "Zipline"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "koh-samui-ang-thong-speedboat",
+    "title": "Ang Thong Marine Park Speedboat from Samui",
+    "duration": "8 hours",
+    "rating": "New",
+    "reviews": "0",
+    "price": 1700,
+    "priceLabel": "1,700",
+    "childPrice": 1400,
+    "destination": "Koh Samui",
+    "region": "koh-samui",
+    "type": "day",
+    "images": [
+      "images/regions/koh-samui-ang-thong-speedboat-1.jpg",
+      "images/regions/koh-samui-ang-thong-speedboat-2.jpg",
+      "images/regions/koh-samui-ang-thong-speedboat-3.jpg",
+      "images/regions/koh-samui-ang-thong-speedboat-4.jpg"
+    ],
+    "highlights": [
+      "Speedboat to Ang Thong",
+      "Snorkelling & kayaking",
+      "Koh Mae Koh Emerald Lake viewpoint",
+      "Breakfast snack & lunch as program"
+    ],
+    "description": "Speedboat into Ang Thong National Park — snorkel, kayak, Viewpoint / Emerald Lake area and island photo stops from Koh Samui.",
+    "itinerary": [
+      "07:00–08:30 Hotel pickup & light breakfast",
+      "09:00 Speedboat depart",
+      "Snorkel & island hopping",
+      "Mae Koh Emerald Lake viewpoint",
+      "Return Samui afternoon"
+    ],
+    "badges": [
+      "Day trip",
+      "Marine park",
+      "Samui"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  },
+  {
+    "slug": "koh-samui-angels-joy-4d3n",
+    "title": "Angel's Joy Samui 4 Days 3 Nights Private",
+    "duration": "4 days 3 nights",
+    "rating": "New",
+    "reviews": "0",
+    "price": 28500,
+    "priceLabel": "28,500",
+    "childPrice": 14500,
+    "destination": "Koh Samui",
+    "region": "koh-samui",
+    "type": "package",
+    "images": [
+      "images/regions/koh-samui-angels-joy-4d3n-1.jpg",
+      "images/regions/koh-samui-angels-joy-4d3n-2.jpg",
+      "images/regions/koh-samui-angels-joy-4d3n-3.jpg",
+      "images/regions/koh-samui-angels-joy-4d3n-4.jpg"
+    ],
+    "highlights": [
+      "3 nights Le Meridien Lamai Deluxe Suite",
+      "Private Samui island tour",
+      "Private Koh Tao snorkel day",
+      "Private Koh Madsum / Koh Rab day",
+      "Private airport transfers · 24h standby driver"
+    ],
+    "description": "Premium private Samui stay at Le Meridien Lamai: island sightseeing, Koh Tao snorkel day, and a private boat day to Koh Rab / Koh Madsum (Pig Island).",
+    "itinerary": [
+      "Day 1: Airport pickup · Samui highlights · check-in Le Meridien",
+      "Day 2: Private Koh Tao snorkel (Rock Point, Purple Bay, Nang Yuan)",
+      "Day 3: Private boat Koh Rab & Koh Madsum",
+      "Day 4: Leisure · shopping · airport transfer"
+    ],
+    "badges": [
+      "Package",
+      "Private",
+      "4D3N"
+    ],
+    "feeAdult": 0,
+    "feeChild": 0,
+    "feeLabel": ""
+  }
+]

@@ -10,3 +10,7 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+_pdf_src/
+**/node_modules/
+
