@@ -108,16 +108,7 @@ img { max-width: 100%; display: block; }
 
 .dg-top__tools { display: none; }
 .dg-top__currency {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.375rem;
-  min-height: 2.75rem;
-  padding: 0.375rem 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #3f3f46;
+  display: none !important;
 }
 .dg-top__flag {
   display: inline-block;

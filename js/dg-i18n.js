@@ -100,14 +100,26 @@
     });
   }
 
-  function ensureToggle() {
-    const currencyBtns = Array.from(
+  function findCurrencyButtons() {
+    return Array.from(
       document.querySelectorAll(
-        'header button[aria-haspopup="dialog"], .dg-top__currency'
+        'header button[aria-haspopup="dialog"], .dg-top__currency, header button'
       )
     ).filter((el) =>
       /Currency|THB|Baht/i.test(el.getAttribute("aria-label") || el.textContent || "")
     );
+  }
+
+  function hideCurrencyButtons() {
+    findCurrencyButtons().forEach((btn) => {
+      btn.hidden = true;
+      btn.setAttribute("aria-hidden", "true");
+      btn.style.display = "none";
+    });
+  }
+
+  function ensureToggle() {
+    const currencyBtns = findCurrencyButtons();
 
     currencyBtns.forEach((currency) => {
       const row = currency.parentElement;
@@ -139,6 +151,9 @@
         document.querySelector("header > div");
       if (headerInner) headerInner.appendChild(makeToggle());
     }
+
+    // Currency switcher is unused — keep EN|TH only
+    hideCurrencyButtons();
   }
 
   // Brand names only — do NOT protect place names here (that caused
@@ -389,6 +404,8 @@
 .dg-lang button.is-active{background:#1f354c;color:#fff}
 .dg-lang button:not(.is-active):hover{background:#f4f4f5}
 .dg-lang__flag{width:1.15rem;height:.8rem;border-radius:2px;display:block;flex-shrink:0;box-shadow:0 0 0 1px rgba(0,0,0,.12);object-fit:cover;overflow:hidden}
+/* Hide unused currency (THB) pill in header */
+.dg-top__currency,header button[aria-label*="Currency" i],header button[aria-label*="currency" i]{display:none!important}
 /* Hide Google Translate chrome */
 .goog-te-banner-frame,.goog-te-balloon-frame,#goog-gt-tt,.goog-te-spinner-pos,.goog-te-menu-frame{display:none!important}
 body{top:0!important}
