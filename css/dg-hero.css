@@ -396,41 +396,81 @@
 .dg-hero__badge {
   position: absolute;
   z-index: 3;
-  left: -2.75rem;
-  top: 16%;
+  /* Mobile: keep inside the shot so it doesn't clip the viewport */
+  left: 0.5rem;
+  right: auto;
+  top: auto;
+  bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
-  min-width: 8.5rem;
-  padding: 0.7rem 0.85rem;
+  gap: 0.35rem;
+  min-width: 0;
+  max-width: calc(100% - 1rem);
+  padding: 0.5rem 0.65rem;
   background: #fff;
-  border-radius: 1rem;
+  border-radius: 0.85rem;
   border: 1px solid rgba(15, 23, 42, 0.1);
   box-shadow:
     0 1px 2px rgba(0, 0, 0, 0.06),
     0 4px 12px rgba(0, 0, 0, 0.1),
-    0 14px 32px rgba(0, 0, 0, 0.14),
-    0 28px 56px rgba(0, 0, 0, 0.1);
+    0 14px 32px rgba(0, 0, 0, 0.14);
+}
+/* Hide avatars on small screens to reduce image coverage */
+.dg-hero__badge .dg-hero__avatars {
+  display: none;
 }
 @media (min-width: 640px) {
-  .dg-hero__badge { left: -3.25rem; min-width: 9.5rem; padding: 0.85rem 1rem; }
+  .dg-hero__badge {
+    left: 0.75rem;
+    top: auto;
+    bottom: 0.75rem;
+    min-width: 8.75rem;
+    max-width: none;
+    padding: 0.7rem 0.85rem;
+    border-radius: 1rem;
+    gap: 0.45rem;
+  }
+  .dg-hero__badge .dg-hero__avatars {
+    display: flex;
+  }
 }
+/* Desktop: float slightly outside the frame again */
 @media (min-width: 1024px) {
+  .dg-hero__badge {
+    left: -3.25rem;
+    top: 16%;
+    bottom: auto;
+    min-width: 9.5rem;
+    padding: 0.85rem 1rem;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.06),
+      0 4px 12px rgba(0, 0, 0, 0.1),
+      0 14px 32px rgba(0, 0, 0, 0.14),
+      0 28px 56px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 1280px) {
   .dg-hero__badge { left: -3.75rem; }
 }
 .dg-hero__badge-num {
   color: var(--hero-ink);
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 800;
   line-height: 1;
+}
+@media (min-width: 640px) {
+  .dg-hero__badge-num { font-size: 1.35rem; }
 }
 .dg-hero__badge-num span {
   display: block;
   margin-top: 0.2rem;
   color: var(--hero-muted);
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 600;
   line-height: 1.25;
+}
+@media (min-width: 640px) {
+  .dg-hero__badge-num span { font-size: 0.72rem; }
 }
 .dg-hero__avatars {
   display: flex;
